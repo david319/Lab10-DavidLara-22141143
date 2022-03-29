@@ -6,12 +6,12 @@ import java.util.logging.Logger;
 public class Archivos {
     // Atributos
     ArrayList<Cientificos> cientificos; // Lista de scientific
-    File Path; // Path del archivo
+    File path; // Path del archivo
 
     public Archivos() {
         cientificos= new ArrayList<>();
-        Path= new File("Scientific.lar");
-        if(Path.exists()){
+        path= new File("Scientific.lar");
+        if(path.exists()){
             load();
         }
     }
@@ -35,7 +35,7 @@ public class Archivos {
 
     public void load(){
         try {
-            FileInputStream fis = new FileInputStream(Path);
+            FileInputStream fis = new FileInputStream(path);
 
             ObjectInputStream ois = new ObjectInputStream(fis);
 
