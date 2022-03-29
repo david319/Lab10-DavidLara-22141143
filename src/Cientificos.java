@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Cientificos {
+public class Cientificos implements Serializable {
     // Atributos
     ArrayList<Planeta> Descubrimientos;
     String name;
